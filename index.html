@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width. intial-scale=1.0" />
+    <title>Sangam - Front End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link rel="preload" as="image" href="./assets/images/sangam4.jpg" />
+    <link rel="preload" as="image" href="./assets/images/image-mask.svg" />
+  </head>
+  <body class="black">
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">Sangam</a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">Sangam</a>
+            <button class="navbar-close-btn" data-nav-toggler>
+              <i class="fa fa-window-close" style="color: #fdff00"></i>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+          <div class="theme-wrapper">
+            <button id="theme-btn" class="btn theme">Change Theme</button>
+          </div>
+        </nav>
+        <button class="nav-open-btn" data-nav-toggler>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="section hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 title">Hi, I'm Sangam.Front End Web Developer.</h1>
+              <p class="section-text">
+                Hello! I'm Sangam, a freelance front end web developer &
+                developer based in Bangalore. I’m very passionate about the work
+                that I do.
+              </p>
+              <div class="social-icons-wrapper">
+                <i style="color: #f3b500" class="fa-brands fa-linkedin"></i>
+                <i style="color: #ea07b9" class="fa-brands fa-twitter"></i>
+                <i style="color: #02e9cf" class="fa-brands fa-github"></i>
+                <i style="color: #ef7816" class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="btn-wrapper">
+                <button class="btn">See My Works</button>
+                <button class="btn">Contact Me</button>
+              </div>
+            </div>
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/sangam4.jpg"
+                width="560"
+                height="560"
+                alt="Sangam"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <section class="section about">
+          <div class="container">
+            <div class="wrapper">
+              <div class="left">
+                <h2 class="h2 section-title">My Skills</h2>
+                <p class="section-text">
+                  Duis mollis est commodo luctus nisi erat porttitor ligula,
+                  eget lacinia odio sem nec elit. Nullam quis risus eget urna
+                  mollis ornare vel. Nulla vitae elit libero, a pharetra augue.
+                  Praesent commodo cursus magna, vel scelerisque nisl.
+                </p>
+              </div>
+              <ul class="progress-list">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Web Development</p>
+                    <span class="span">100 %</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 100%; background-color: #f3b500"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Mobile App Development</p>
+                    <span class="span">80 %</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 80%; background-color: #ea07b9"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Backend Development</p>
+                    <span class="span">85 %</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 85%; background-color: #02e9cf"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>QE Testing</p>
+                    <span class="span">90 %</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 90%; background-color: #ef7816"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="grid-list">
+              <li>
+                <div class="about-card">
+                  <div class="card-icon">
+                    <i style="color: #f3b500" class="fa-solid fa-code"></i>
+                  </div>
+                  <h3 class="h4 card-title">Web Design</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Delectus totam expedita possimus, quis, autem impedit
+                    placeat.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="about-card">
+                  <div class="card-icon">
+                    <i style="color: #ea07b9" class="fa-solid fa-database"></i>
+                  </div>
+                  <h3 class="h4 card-title">Web Design</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Delectus totam expedita possimus, quis, autem impedit
+                    placeat.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="about-card">
+                  <div class="card-icon">
+                    <i style="color: #02e9cf" class="fa-solid fa-file-code"></i>
+                  </div>
+                  <h3 class="h4 card-title">Web Design</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Delectus totam expedita possimus, quis, autem impedit
+                    placeat.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="about-card">
+                  <div class="card-icon">
+                    <i style="color: #ef7816" class="fa-brands fa-codepen"></i>
+                  </div>
+                  <h3 class="h4 card-title">Web Design</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Delectus totam expedita possimus, quis, autem impedit
+                    placeat.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="divider"></div>
+
+        <section class="section project">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <h2 class="h2 section-title">Latest Projects</h2>
+                <p class="section-text">
+                  Check out some of my latest projects.
+                </p>
+              </div>
+              <button class="btn">See All Projects</button>
+            </div>
+            <ul class="grid-list">
+              <li>
+                <div class="project-card project-card-one">
+                  <div class="card-content">
+                    <p class="card-type">Web Design</p>
+                    <h3 class="h3 card-title">Youtube Theme</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa consectetur delectus, voluptates rerum impedit sequi
+                      vitae id deleniti.
+                    </p>
+                    <a href="#" class="btn-text" style="color: #a07cc5"
+                      ><span class="span">See Project</span></a
+                    >
+                  </div>
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/project-1.png"
+                      width="650"
+                      height="370"
+                      alt="Web-Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="project-card project-card-two">
+                  <div class="card-content">
+                    <p class="card-type">Mobile Design</p>
+                    <h3 class="h3 card-title">Twitter App</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa consectetur delectus, voluptates rerum impedit sequi
+                      vitae id deleniti.
+                    </p>
+                    <a href="#" class="btn-text" style="color: #3f78e0"
+                      ><span class="span">See Project</span></a
+                    >
+                  </div>
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/project-2.png"
+                      width="650"
+                      height="370"
+                      alt="Web-Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="project-card project-card-three">
+                  <div class="card-content">
+                    <p class="card-type">Mobile Design</p>
+                    <h3 class="h3 card-title">Facebook App</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa consectetur delectus, voluptates rerum impedit sequi
+                      vitae id deleniti.
+                    </p>
+                    <a href="#" class="btn-text" style="color: #7cb798"
+                      ><span class="span">See Project</span></a
+                    >
+                  </div>
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/project-3.png"
+                      width="650"
+                      height="370"
+                      alt="Web-Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div class="project-card project-card-four">
+                  <div class="card-content">
+                    <p class="card-type">Mobile Design</p>
+                    <h3 class="h3 card-title">Github Design</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa consectetur delectus, voluptates rerum impedit sequi
+                      vitae id deleniti.
+                    </p>
+                    <a href="#" class="btn-text" style="color: #d16b86"
+                      ><span class="span">See Project</span></a
+                    >
+                  </div>
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/project-4.png"
+                      width="650"
+                      height="370"
+                      alt="Web-Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="divider"></div>
+
+        <section class="section contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content">
+                <div class="card-icon">
+                  <i style="font-size: 50px" class="fa-solid fa-envelope"></i>
+                </div>
+                <h2 class="h2 section-title">Let's Connect and Explore.</h2>
+                <p class="section-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                  magnam praesentium fuga vitae perferendis tempora rerum aut,
+                  adipisci impedit! Soluta asperiores maxime voluptates.
+                </p>
+              </div>
+
+              <form action="" method="post" class="contact-form">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name *"
+                    required
+                    class="input-field"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email *"
+                    required
+                    class="input-field"
+                  />
+                </div>
+                <textarea
+                  name="message"
+                  placeholder="Message *"
+                  required
+                  class="input-field"
+                ></textarea>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="divider"></div>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-inner-container">
+              <p class="copyright">© 2024 sangam. All rights reserved.</p>
+              <ul class="social-icons-wrapper">
+                <li>
+                  <a href="#" class="social-link">
+                    <i style="color: #f3b500" class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <i style="color: #ea07b9" class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <i style="color: #02e9cf" class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <i style="color: #ef7816" class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </article>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
